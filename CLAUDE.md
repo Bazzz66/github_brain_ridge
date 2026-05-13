@@ -10,7 +10,7 @@ Geen webservice, geen Docker container — alleen een shell script + n8n workflo
 ## Stack
 - Shell script: brain-snapshot.sh (git add + commit + push indien wijzigingen)
 - n8n workflow: Brain Snapshot (scheduleTrigger elke 10 min + SSH Execute)
-- SSH credential in n8n: NAS Deploy (id_ed25519_n8n)
+- SSH credential in n8n: NAS Deploy Brain (id_ed25519_n8n)
 - Git binary: /var/services/homes/claude_ssh/bin/git (Docker wrapper)
 - Brain vault: /volume2/projects/_brain/
 - GitHub remote: git@github.com:Bazzz66/brain.git
