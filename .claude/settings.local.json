@@ -18,7 +18,26 @@
       "Bash(/var/services/homes/claude_ssh/bin/git remote *)",
       "Bash(/var/services/homes/claude_ssh/bin/git add *)",
       "Bash(/var/services/homes/claude_ssh/bin/git -c user.email=bashendrikx@gmail.com -c 'user.name=Bas Hendrikx' commit -m 'feat: brain-snapshot sync via n8n')",
-      "Bash(/var/services/homes/claude_ssh/bin/git push *)"
+      "Bash(/var/services/homes/claude_ssh/bin/git push *)",
+      "Bash(/var/services/homes/claude_ssh/bin/git -c user.email=bashendrikx@gmail.com -c 'user.name=Bas Hendrikx' commit -m 'docs: credential naam corrigeren naar NAS Deploy Brain')",
+      "Bash(curl -s http://localhost:11434/api/tags)",
+      "Bash(awk '{print $1}')",
+      "Bash(ip addr *)",
+      "Bash(awk '{print $2}')",
+      "Bash(curl -s http://localhost:3080/health)",
+      "Bash(ip link *)",
+      "Read(//var/packages/Tailscale/etc/**)",
+      "Read(//var/packages/Tailscale/**)",
+      "Bash(netstat -tlnp)",
+      "Bash(python3 -m json.tool)",
+      "Bash(python3 *)",
+      "Bash(echo \"exit: $?\")",
+      "Read(//usr/syno/bin/**)",
+      "Bash(synoservice --status firewall)",
+      "Bash(synofirewall --reload)",
+      "Bash(/var/services/homes/claude_ssh/bin/git -C /volume2/projects/github_brain_ridge status --short)",
+      "Bash(/var/services/homes/claude_ssh/bin/git -C /volume2/projects/_brain status --short)",
+      "Bash(/var/services/homes/claude_ssh/bin/git *)"
     ]
   }
 }
