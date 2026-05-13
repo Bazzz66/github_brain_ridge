@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git *)",
+      "Bash(xargs -I {} sh -c 'echo \"=== {} ===\"; cat {}/../.git/config 2>/dev/null | head -20')",
+      "Bash(sudo /usr/local/bin/docker ps --all)",
+      "Bash(crontab -l)",
+      "Bash(xargs ls -la)",
+      "Bash(chmod +x /volume2/projects/github_brain_ridge/brain-snapshot.sh)",
+      "Bash(/var/services/homes/claude_ssh/bin/git -C /volume2/projects/_brain status --porcelain)",
+      "Bash(/var/services/homes/claude_ssh/bin/git -C /volume2/projects/_brain remote -v)",
+      "Bash(sh /volume2/projects/github_brain_ridge/brain-snapshot.sh)",
+      "Bash(/var/services/homes/claude_ssh/bin/git -C /volume2/projects/_brain log --oneline -3)",
+      "Bash(sudo *)",
+      "Bash(/var/services/homes/claude_ssh/bin/git -C /volume2/projects/_brain config user.email \"bashendrikx@gmail.com\")",
+      "Bash(/var/services/homes/claude_ssh/bin/git -C /volume2/projects/_brain config user.name \"Bas Hendrikx\")",
+      "Bash(/var/services/homes/claude_ssh/bin/git -C /volume2/projects/_brain log --oneline -2)",
+      "Bash(/var/services/homes/claude_ssh/bin/git remote *)",
+      "Bash(/var/services/homes/claude_ssh/bin/git add *)",
+      "Bash(/var/services/homes/claude_ssh/bin/git -c user.email=bashendrikx@gmail.com -c 'user.name=Bas Hendrikx' commit -m 'feat: brain-snapshot sync via n8n')",
+      "Bash(/var/services/homes/claude_ssh/bin/git push *)"
+    ]
+  }
+}
