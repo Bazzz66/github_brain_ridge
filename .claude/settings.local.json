@@ -37,7 +37,8 @@
       "Bash(synofirewall --reload)",
       "Bash(/var/services/homes/claude_ssh/bin/git -C /volume2/projects/github_brain_ridge status --short)",
       "Bash(/var/services/homes/claude_ssh/bin/git -C /volume2/projects/_brain status --short)",
-      "Bash(/var/services/homes/claude_ssh/bin/git *)"
+      "Bash(/var/services/homes/claude_ssh/bin/git *)",
+      "Bash(openssl rand *)"
     ]
   }
 }
